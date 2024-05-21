@@ -9,5 +9,10 @@ pipeline{
         helloworld()
       }
     }
+    stage ('build') {
+      steps{
+        myCustomStep()
+      }
+    }
   }
 }
