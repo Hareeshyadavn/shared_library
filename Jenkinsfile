@@ -1,3 +1,4 @@
+@library("shared_library") _
 pipeline{
   agent any
   stages{
@@ -5,6 +6,7 @@ pipeline{
       steps {
         sh ''' ls '''
         echo "hello man"
+        helloworld()
       }
     }
   }
